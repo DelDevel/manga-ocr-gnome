@@ -5,7 +5,8 @@ import subprocess
 import sys
 from PIL import BmpImagePlugin, Image, PngImagePlugin, ImageGrab
 
-def patched_grabclipboard() -> Image | list[str] | None:
+
+def patched_grabclipboard() -> Image.Image | list[str] | None:
     if sys.platform == "darwin":
         p = subprocess.run(
             ["osascript", "-e", "get the clipboard as «class PNGf»"],
