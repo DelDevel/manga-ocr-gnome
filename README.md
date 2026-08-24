@@ -1,3 +1,7 @@
+# Why?
+GNOME does not play well with wl-clipboard (see [this issue](https://github.com/bugaevc/wl-clipboard/issues/90)).
+Since I use Manga OCR for some automation tasks I decided to patch it to work with GPaste, fixing the flickering and ghost windows that occurred with wl-clipboard.
+
 # Manga OCR
 
 Optical character recognition for Japanese text, with the main focus being Japanese manga.
